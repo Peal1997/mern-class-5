@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- main bootstrape cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow mx-auto">
+                    <div class="card-header">
+                        <h1>Student Registrarion</h1>
+                    </div>
+                     <div class="card-body">
+                        <div class="msg">
+        
+                        </div>
+                         <form action="">
+                            <div class="form-group my-3">
+                                <input name="name" class="form-control" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input name="cell" class="form-control" type="text" placeholder="Cell">
+                            </div>
+                            <div class="form-group my-3">
+                                <input name="email" class="form-control" type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group my-3">
+                                <input name="photo" class="form-control" type="text" placeholder="Photo">
+                            </div>
+                            <div class="form-group my-3">
+                                <input class="btn btn-primary w-100" type="submit"  value="Submit">
+                            </div>
+                         </form>
+                     </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table shadow table-striped">
+                     <thead>
+                        <th>#</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>cell</th>
+                        <th>Photo</th>
+                        <th>Action</th>
+                     </thead>
+                     <tbody>
+                        
+                       
+                     </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="single_view">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 id="profile_name"></h1>
+                    </div>
+                    <div class="modal-body" id="single_data">
+                       
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+  
+
+
+   <!-- javaScript bundle cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="./function.js"></script>
+    <script src="./utility.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
