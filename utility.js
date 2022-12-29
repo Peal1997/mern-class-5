@@ -34,3 +34,21 @@ function delete_data (key ,index) {
 }
 
 
+/**
+ * @desc Edit function
+ */
+
+function edit (key , index , data) {
+   let all_data = JSON.parse(localStorage.getItem(key))
+   let single_data = all_data[index]
+   //update single data
+   single_data = {
+      ...data
+   }
+   all_data[index] = single_data
+   localStorage.setItem(key ,JSON.stringify(all_data) )
+}
+
+
+
+
